@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baptiste Pillard — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <button class="theme-btn" id="themeBtn" aria-label="Basculer le thème">
+      <span class="theme-icon" id="themeIcon">🌙</span>
+      <span id="themeLabel">Mode sombre</span>
+    </button>
+  </div>
+
+  <main class="bento">
+
+    <article class="card card-hero col-2" aria-label="Présentation">
+      <div class="hero-avatar" aria-hidden="true">👨‍💻</div>
+      <div>
+        <p class="hero-eyebrow">Portfolio · 2025 – 2026</p>
+        <h1 class="hero-name">Baptiste<br>Pillard</h1>
+        <p class="hero-sub">
+          <span class="typed-text" id="typedText" aria-live="polite"></span>
+        </p>
+        <div class="hero-tags">
+          <span class="pill">#étudiant</span>
+          <span class="pill">#développeur</span>
+          <span class="pill">#linux</span>
+          <span class="pill">#open-source</span>
+          <span class="pill">#BUT-info</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card-status" aria-label="Statut">
+      <div>
+        <p class="card-label">Statut actuel</p>
+        <div class="status-live">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span class="live-text">Disponible</span>
+        </div>
+        <p class="status-desc">
+          Passionné par le code, les systèmes et la résolution de problèmes.
+          En apprentissage continu, toujours curieux de nouvelles technologies.
+        </p>
+      </div>
+      <div class="status-badge">🎯 Ouvert aux stages 2026 - 2028 (24 mois)</div>
+    </article>
+
+    <article class="card card-banner col-3" aria-label="Recherche d'alternance">
+
+      <div class="banner-left">
+        <div class="banner-badge">🎓 Alternance</div>
+        <h2 class="banner-title">Disponible en alternance dès septembre 2026</h2>
+        <p class="banner-sub">
+          Rythme <strong>1 semaine école · 1 semaine entreprise</strong> — IUT Lyon 1 La Doua ·
+          Ouvert à tous types de missions en développement, systèmes ou réseaux.
+        </p>
+        <div class="banner-tags">
+          <span class="banner-tag">🏢 Lyon &amp; alentours</span>
+          <span class="banner-tag">🗓 Sept. 2026</span>
+          <span class="banner-tag">🚗 Permis B</span>
+          <span class="banner-tag">🔄 1S / 1S</span>
+          <span class="banner-tag">💻 Dev · Sys · Réseaux</span>
+        </div>
+      </div>
+
+      <div class="banner-right">
+        <a class="cv-btn" href="CV_BAPTISTE.pdf" download aria-label="Télécharger le CV de Baptiste Pillard">
+          <span class="cv-btn-icon" aria-hidden="true">⬇</span>
+          <span class="cv-btn-text">
+            <span class="cv-btn-label">Télécharger mon CV</span>
+            <span class="cv-btn-sub">PDF · mis à jour 2026</span>
+          </span>
+        </a>
+        <p class="banner-note">
+          Ou contactez-moi directement via les liens ci-dessous
+        </p>
+      </div>
+
+    </article>
+
+    <article class="card card-skills" aria-label="Compétences">
+      <p class="card-label">Stack technique</p>
+      <div class="skills-wrap" role="list">
+
+        <div class="skill-row" role="listitem">
+          <span class="skill-name">Python</span>
+          <div class="skill-track"><div class="skill-fill fill-blue"   data-width="30"></div></div>
+          <span class="skill-pct">30%</span>
+        </div>
+
+        <div class="skill-row" role="listitem">
+          <span class="skill-name">Java</span>
+          <div class="skill-track"><div class="skill-fill fill-amber"  data-width="55"></div></div>
+          <span class="skill-pct">55%</span>
+        </div>
+
+        <div class="skill-row" role="listitem">
+          <span class="skill-name">C</span>
+          <div class="skill-track"><div class="skill-fill fill-teal"   data-width="50"></div></div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+        <div class="skill-row" role="listitem">
+          <span class="skill-name">SQL</span>
+          <div class="skill-track"><div class="skill-fill fill-green"  data-width="60"></div></div>
+          <span class="skill-pct">60%</span>
+        </div>
+
+        <div class="skill-row" role="listitem">
+          <span class="skill-name">HTML/CSS</span>
+          <div class="skill-track"><div class="skill-fill fill-pink"   data-width="65"></div></div>
+          <span class="skill-pct">65%</span>
+        </div>
+
+        <div class="skill-row" role="listitem">
+          <span class="skill-name">Linux</span>
+          <div class="skill-track"><div class="skill-fill fill-purple" data-width="50"></div></div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="card card-projects col-2" aria-label="Projets SAE">
+      <p class="card-label">Projets · SAE BUT</p>
+      <h2 class="projects-heading">Situations d'Apprentissage et d'Évaluation</h2>
+
+      <div class="projects-grid">
+
+        <div class="proj-card">
+          <div class="proj-icon-wrap amber">🗄️</div>
+          <div class="proj-name">SAE 1.04 — Base de Données</div>
+          <p class="proj-desc">
+            <span class="todo">Modélisation relationnelle, requêtes SQL, contexte du projet</span>
+          </p>
+          <div class="proj-techs">
+            <span class="tech">SQL</span>
+            <span class="tech">PostgreSQL</span>
+            <span class="tech">MCD/MLD</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-wrap blue">⚙️</div>
+          <div class="proj-name">SAE 1.01 — Développement App</div>
+          <p class="proj-desc">
+            <span class="todo">Langage, fonctionnalités, architecture, apprentissages clés</span>
+          </p>
+          <div class="proj-techs">
+            <span class="tech">Python</span>
+            <span class="tech">Algo</span>
+            <span class="tech">Conception</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-wrap purple">🌱</div>
+          <div class="proj-name">SAE 1.06 — Environnement éco.</div>
+          <p class="proj-desc">
+            Découverte de l'environnement économique et écologique via l'étude du respect de la RSE de l'entreprise BYD.
+          </p>
+          <div class="proj-techs">
+            <span class="tech">RSE</span>
+            <span class="tech">Économie</span>
+            <span class="tech">Écologie</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-wrap purple">☕</div>
+          <div class="proj-name">SAE S2.01 — Déploiement Java</div>
+          <p class="proj-desc">
+            Déploiement d'une application Java avec IHM. Intégration de notions de mathématiques et de GPI.
+          </p>
+          <div class="proj-techs">
+            <span class="tech">Java</span>
+            <span class="tech">IHM</span>
+            <span class="tech">GPI</span>
+            <span class="tech">Maths</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-wrap amber">📊</div>
+          <div class="proj-name">SAE S2.04 — Gestion de BDD</div>
+          <p class="proj-desc">
+            Gestion avancée d'une base de données et création d'un rapport analytique détaillé.
+          </p>
+          <div class="proj-techs">
+            <span class="tech">Power BI</span>
+            <span class="tech">SQL</span>
+            <span class="tech">Data</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-wrap blue">🌐</div>
+          <div class="proj-name">SAE S2.03 — Services réseau</div>
+          <p class="proj-desc">
+            Configuration de services réseaux, mise en place d'un serveur Apache2 et hébergement d'un site internet.
+          </p>
+          <div class="proj-techs">
+            <span class="tech">Apache2</span>
+            <span class="tech">Réseaux</span>
+            <span class="tech">Linux</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card-contact" aria-label="Contact">
+      <div>
+        <p class="card-label">Me contacter</p>
+        <h2 class="contact-heading">Travaillons<br>ensemble ✦</h2>
+      </div>
+
+      <nav class="contact-links" aria-label="Liens de contact">
+
+        <a class="contact-link" href="https://linkedin.com/in/baptiste-pillard"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <div class="link-icon-wrap li" aria-hidden="true">💼</div>
+          <div class="link-info">
+            <div class="link-name">LinkedIn</div>
+            <div class="link-sub">Mon profil</div>
+          </div>
+          <span class="link-caret" aria-hidden="true">›</span>
+        </a>
+
+        <a class="contact-link" href="mailto:baptistepillard@gmail.com" aria-label="Email">
+          <div class="link-icon-wrap mail" aria-hidden="true">📬</div>
+          <div class="link-info">
+            <div class="link-name">Email</div>
+            <div class="link-sub">baptistepillard@gmail.com</div>
+          </div>
+          <span class="link-caret" aria-hidden="true">›</span>
+        </a>
+
+      </nav>
+
+      <button class="copy-btn" id="copyBtn" aria-label="Copier l'adresse email">
+        📋 Copier l'adresse email
+      </button>
+    </article>
+
+    <article class="card card-timeline" aria-label="Parcours académique">
+      <p class="card-label">Mon parcours</p>
+
+      <div class="timeline" role="list">
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot filled" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2021 – 2024</div>
+            <div class="tl-title">Lycée</div>
+            <div class="tl-desc">Baccalauréat STI2D spécialité SIN</div>
+            <span class="tl-badge">✏️ Val de Saône </span>
+          </div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot current" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2025 → aujourd'hui</div>
+            <div class="tl-title">BUT Informatique — BUT 1</div>
+            <div class="tl-desc">IUT Lyon 1 · La Doua<br>Développement, réseaux, bases de données, mathématiques</div>
+            <span class="tl-badge green">● En cours</span>
+          </div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2026 – 2027</div>
+            <div class="tl-title">BUT Informatique — BUT 2 DACS</div>
+            <div class="tl-desc">Alternance ou poursuite d'études · Lyon</div>
+          </div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2027 – 2028</div>
+            <div class="tl-title">BUT Informatique — BUT 3 DACS</div>
+            <div class="tl-desc">Diplôme national · parcours à définir</div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="card card-now" aria-label="En ce moment">
+      <p class="card-label">En ce moment ✦</p>
+
+      <div class="now-list">
+
+        <div class="now-item">
+          <div class="now-icon amber" aria-hidden="true">☕</div>
+          <div class="now-info">
+            <div class="now-title">Java</div>
+            <div class="now-sub">Programmation Orientée Objet</div>
+            <div class="now-progress-wrap">
+              <div class="now-progress fill-amber" data-width="65"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="now-item">
+          <div class="now-icon blue" aria-hidden="true">📈</div>
+          <div class="now-info">
+            <div class="now-title">GPI</div>
+            <div class="now-sub">Gestion de Projet Informatique</div>
+            <div class="now-progress-wrap">
+              <div class="now-progress fill-blue" data-width="60"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="now-item">
+          <div class="now-icon purple" aria-hidden="true">💬</div>
+          <div class="now-info">
+            <div class="now-title">Communication</div>
+            <div class="now-sub">Savoir-être, présentations</div>
+            <div class="now-progress-wrap">
+              <div class="now-progress fill-purple" data-width="55"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    Conçu &amp; développé par Baptiste Pillard · IUT Lyon 1 La Doua · 2025-2026
+  </footer>
+
+  <div class="toast" id="toast" role="alert" aria-live="assertive">
+    ✅ Email copié dans le presse-papier !
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
