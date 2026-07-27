@@ -254,7 +254,7 @@ body {
 ══════════════════════════════════════════════ */
 .card-status {
   background:
-    radial-gradient(ellipse 120% 120% at 100% 0%, rgba(48,209,88,0.11) 0%, transparent 60%),
+    radial-gradient(ellipse 120% 120% at 100% 0%, rgba(255,0,0,0.11) 0%, transparent 60%),
     var(--white);
   justify-content: space-between;
 }
