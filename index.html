@@ -1,160 +1,165 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baptiste Pillard — Portfolio</title>
+  <title>Baptiste Pillard — Concepteur Développeur en alternance · Portfolio</title>
+
+  <meta name="description" content="Portfolio de Baptiste Pillard — étudiant en BUT Informatique (parcours DACS) à l'IUT Lyon 1 et alternant Concepteur Développeur à la CARSAT Rhône-Alpes. Développement d'applications & infrastructure réseau." />
+  <meta property="og:title" content="Baptiste Pillard — Portfolio" />
+  <meta property="og:description" content="Concepteur Développeur en alternance @ CARSAT Rhône-Alpes · BUT Informatique parcours DACS · IUT Lyon 1" />
+  <meta name="theme-color" content="#0b0e14" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1117'/%3E%3Ctext x='11' y='45' font-family='monospace' font-size='32' font-weight='bold' fill='%233fd68f'%3E%3E_%3C/text%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="topbar">
+    <span class="logo" aria-hidden="true">~/baptiste-pillard<span class="logo-cursor">▊</span></span>
     <button class="theme-btn" id="themeBtn" aria-label="Basculer le thème">
-      <span class="theme-icon" id="themeIcon">🌙</span>
-      <span id="themeLabel">Mode sombre</span>
+      <span class="theme-icon" id="themeIcon">☀️</span>
+      <span id="themeLabel">Mode clair</span>
     </button>
   </div>
 
   <main class="bento">
 
+    <!-- ── 1 · HERO ─────────────────────────────── -->
     <article class="card card-hero col-2" aria-label="Présentation">
-      <div class="hero-avatar" aria-hidden="true">👨‍💻</div>
+      <div class="hero-avatar" aria-hidden="true">BP</div>
       <div>
-        <p class="hero-eyebrow">Portfolio · 2025 – 2026</p>
+        <p class="hero-eyebrow">portfolio — v2.0 · 2026 → 2028</p>
         <h1 class="hero-name">Baptiste<br>Pillard</h1>
+        <p class="hero-role">Concepteur Développeur <span class="hero-at">@</span> CARSAT Rhône-Alpes</p>
         <p class="hero-sub">
-          <span class="typed-text" id="typedText" aria-live="polite"></span>
+          Le code d'un côté, le réseau de l'autre — je n'ai pas choisi entre les deux,
+          et c'est exactement ce qui me plaît. Étudiant à l'IUT Lyon 1, je pars pour
+          deux ans d'alternance entre le parcours <strong>DACS</strong> et la
+          <strong>CARSAT Rhône-Alpes</strong>.
         </p>
         <div class="hero-tags">
-          <span class="pill">#étudiant</span>
-          <span class="pill">#développeur</span>
+          <span class="pill">#java</span>
           <span class="pill">#linux</span>
+          <span class="pill">#réseaux</span>
           <span class="pill">#open-source</span>
-          <span class="pill">#BUT-info</span>
+          <span class="pill">#DACS</span>
+          <span class="pill">#lyon</span>
         </div>
       </div>
     </article>
 
+    <!-- ── 2 · STATUT ───────────────────────────── -->
     <article class="card card-status" aria-label="Statut">
       <div>
-        <p class="card-label">Statut actuel</p>
+        <p class="card-label">statut</p>
         <div class="status-live">
           <span class="live-dot" aria-hidden="true"></span>
-          <span class="live-text">Indisponible</span>
+          <span class="live-text">Alternance signée</span>
         </div>
         <p class="status-desc">
-          Passionné par le code, les systèmes et la résolution de problèmes.
-          En apprentissage continu, toujours curieux de nouvelles technologies.
+          À partir de septembre 2026, j'alterne entre les cours du BUT 2
+          (parcours DACS) à l'IUT Lyon 1 et le poste de Concepteur Développeur
+          à la CARSAT Rhône-Alpes, entre l'équipe Développement et l'équipe Réseau.
         </p>
       </div>
-      <div class="status-badge">🎯 Ouvert aux alternances 2026 - 2028 (24 mois)</div>
-    </article>
-
-    <article class="card card-banner col-3" aria-label="Recherche d'alternance">
-
-      <div class="banner-left">
-        <div class="banner-badge">🎓 Alternance</div>
-        <h2 class="banner-title">Disponible en alternance dès septembre 2026</h2>
-        <p class="banner-sub">
-          Rythme <strong>1 semaine école · 1 semaine entreprise</strong> — IUT Lyon 1 La Doua ·
-          Ouvert à tous types de missions en développement, systèmes ou réseaux.
-        </p>
-        <div class="banner-tags">
-          <span class="banner-tag">🏢 Lyon &amp; alentours</span>
-          <span class="banner-tag">🗓 Sept. 2026</span>
-          <span class="banner-tag">🚗 Permis B</span>
-          <span class="banner-tag">🔄 1S / 1S</span>
-          <span class="banner-tag">💻 Dev · Sys · Réseaux</span>
-        </div>
-      </div>
-
-      <div class="banner-right">
-        <a class="cv-btn" href="CV_BAPTISTE.pdf" download aria-label="Télécharger le CV de Baptiste Pillard">
-          <span class="cv-btn-icon" aria-hidden="true">⬇</span>
-          <span class="cv-btn-text">
-            <span class="cv-btn-label">Télécharger mon CV</span>
-            <span class="cv-btn-sub">PDF · mis à jour 2026</span>
-          </span>
-        </a>
-        <p class="banner-note">
-          Ou contactez-moi directement via les liens ci-dessous
-        </p>
-      </div>
-
-    </article>
-
-    <article class="card card-skills" aria-label="Compétences">
-      <p class="card-label">Stack technique</p>
-      <div class="skills-wrap" role="list">
-
-        <div class="skill-row" role="listitem">
-          <span class="skill-name">Python</span>
-          <div class="skill-track"><div class="skill-fill fill-blue"   data-width="30"></div></div>
-          <span class="skill-pct">30%</span>
-        </div>
-
-        <div class="skill-row" role="listitem">
-          <span class="skill-name">Java</span>
-          <div class="skill-track"><div class="skill-fill fill-amber"  data-width="55"></div></div>
-          <span class="skill-pct">55%</span>
-        </div>
-
-        <div class="skill-row" role="listitem">
-          <span class="skill-name">C</span>
-          <div class="skill-track"><div class="skill-fill fill-teal"   data-width="50"></div></div>
-          <span class="skill-pct">50%</span>
-        </div>
-
-        <div class="skill-row" role="listitem">
-          <span class="skill-name">SQL</span>
-          <div class="skill-track"><div class="skill-fill fill-green"  data-width="60"></div></div>
-          <span class="skill-pct">60%</span>
-        </div>
-
-        <div class="skill-row" role="listitem">
-          <span class="skill-name">HTML/CSS</span>
-          <div class="skill-track"><div class="skill-fill fill-pink"   data-width="65"></div></div>
-          <span class="skill-pct">65%</span>
-        </div>
-
-        <div class="skill-row" role="listitem">
-          <span class="skill-name">Linux</span>
-          <div class="skill-track"><div class="skill-fill fill-purple" data-width="50"></div></div>
-          <span class="skill-pct">50%</span>
-        </div>
-
+      <div class="status-badges">
+        <span class="status-badge green">🎓 BUT 1 validé — juillet 2026</span>
+        <span class="status-badge cyan">🗓 Rentrée : septembre 2026</span>
       </div>
     </article>
 
+    <!-- ── 3 · TERMINAL INTERACTIF ──────────────── -->
+    <article class="card card-terminal col-3" aria-label="Terminal interactif">
+      <div class="term-bar">
+        <span class="term-dot red" aria-hidden="true"></span>
+        <span class="term-dot yellow" aria-hidden="true"></span>
+        <span class="term-dot green" aria-hidden="true"></span>
+        <span class="term-title">baptiste@portfolio: ~</span>
+      </div>
+      <div class="term-body" id="termBody">
+        <div id="termOutput"></div>
+        <div class="term-input-row" id="termInputRow" hidden>
+          <span class="t-prompt">visiteur@portfolio:~$</span>
+          <input class="term-input" id="termInput" type="text"
+                 autocomplete="off" autocapitalize="off" spellcheck="false"
+                 aria-label="Tapez une commande, par exemple help" />
+        </div>
+      </div>
+    </article>
+
+    <!-- ── 4 · ALTERNANCE CARSAT ────────────────── -->
+    <article class="card card-carsat col-3" aria-label="Alternance CARSAT">
+      <p class="card-label">alternance — 2026 → 2028</p>
+
+      <div class="carsat-head">
+        <div class="carsat-badge">🏢 CARSAT Rhône-Alpes</div>
+        <h2 class="carsat-title">Concepteur Développeur</h2>
+        <p class="carsat-sub">
+          La Caisse d'assurance retraite et de la santé au travail — un organisme de la
+          Sécurité sociale au service de millions d'assurés. Un poste hybride, réparti
+          entre deux équipes : le combo parfait pour le parcours DACS.
+        </p>
+      </div>
+
+      <div class="missions">
+        <div class="mission-col dev">
+          <h3 class="mission-title"><span aria-hidden="true">💻</span> Équipe Développement</h3>
+          <ul class="mission-list">
+            <li>Analyse des besoins utilisateurs &amp; métiers</li>
+            <li>Conception &amp; développement d'applications internes</li>
+            <li>Maintenance corrective &amp; évolutive</li>
+            <li>Tests techniques &amp; fonctionnels avant mise en production</li>
+            <li>Rédaction de la documentation technique</li>
+            <li>Déploiement &amp; mise en production</li>
+            <li>Support applicatif &amp; résolution d'incidents</li>
+          </ul>
+        </div>
+
+        <div class="mission-divider" aria-hidden="true"><span>50 / 50</span></div>
+
+        <div class="mission-col net">
+          <h3 class="mission-title"><span aria-hidden="true">🌐</span> Équipe Réseau</h3>
+          <ul class="mission-list">
+            <li>Exploitation &amp; maintenance du data center régional</li>
+            <li>Brassage &amp; câblage réseau</li>
+            <li>Diagnostic &amp; résolution d'incidents réseau</li>
+            <li>Installation d'équipements : switchs, routeurs, bornes Wi-Fi</li>
+            <li>Gestion &amp; documentation des infrastructures</li>
+            <li>Projets de sécurisation &amp; modernisation du réseau</li>
+            <li>Administration de la téléphonie fixe &amp; mobile</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="carsat-foot">
+        <span class="carsat-chip">📍 Lyon</span>
+        <span class="carsat-chip">🔄 1 semaine IUT · 1 semaine entreprise</span>
+        <span class="carsat-chip">🎯 En lien direct avec le parcours DACS</span>
+      </div>
+    </article>
+
+    <!-- ── 5 · PROJETS SAE ──────────────────────── -->
     <article class="card card-projects col-2" aria-label="Projets SAE">
-      <p class="card-label">Projets · SAE BUT</p>
+      <p class="card-label">projets — SAE · BUT 1</p>
       <h2 class="projects-heading">Situations d'Apprentissage et d'Évaluation</h2>
 
       <div class="projects-grid">
 
         <div class="proj-card">
-          <div class="proj-icon-wrap amber">🗄️</div>
-          <div class="proj-name">SAE 1.04 — Base de Données</div>
-          <p class="proj-desc">
-            <span class="todo">Modélisation relationnelle, requêtes SQL, contexte du projet</span>
-          </p>
-          <div class="proj-techs">
-            <span class="tech">SQL</span>
-            <span class="tech">PostgreSQL</span>
-            <span class="tech">MCD/MLD</span>
+          <div class="proj-top">
+            <div class="proj-icon-wrap cyan">⚙️</div>
+            <span class="proj-sem">S1</span>
           </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-icon-wrap blue">⚙️</div>
-          <div class="proj-name">SAE 1.01 — Développement App</div>
+          <div class="proj-name">SAE 1.01 · Application Python</div>
           <p class="proj-desc">
-            <span class="todo">Langage, fonctionnalités, architecture, apprentissages clés</span>
+            Première application complète en Python : analyse du besoin,
+            algorithmique et implémentation des fonctionnalités, jusqu'à la validation.
           </p>
           <div class="proj-techs">
             <span class="tech">Python</span>
@@ -164,10 +169,31 @@
         </div>
 
         <div class="proj-card">
-          <div class="proj-icon-wrap purple">🌱</div>
-          <div class="proj-name">SAE 1.06 — Environnement éco.</div>
+          <div class="proj-top">
+            <div class="proj-icon-wrap amber">🗄️</div>
+            <span class="proj-sem">S1</span>
+          </div>
+          <div class="proj-name">SAE 1.04 · Base de données</div>
           <p class="proj-desc">
-            Découverte de l'environnement économique et écologique via l'étude du respect de la RSE de l'entreprise BYD.
+            Conception d'une base de données de A à Z : modélisation MCD/MLD,
+            création du schéma et requêtes SQL sous PostgreSQL.
+          </p>
+          <div class="proj-techs">
+            <span class="tech">SQL</span>
+            <span class="tech">PostgreSQL</span>
+            <span class="tech">MCD/MLD</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <div class="proj-icon-wrap green">🌱</div>
+            <span class="proj-sem">S1</span>
+          </div>
+          <div class="proj-name">SAE 1.06 · Économie &amp; RSE</div>
+          <p class="proj-desc">
+            Découverte de l'environnement économique et écologique à travers
+            l'étude du respect de la RSE par l'entreprise BYD.
           </p>
           <div class="proj-techs">
             <span class="tech">RSE</span>
@@ -177,10 +203,14 @@
         </div>
 
         <div class="proj-card">
-          <div class="proj-icon-wrap purple">☕</div>
-          <div class="proj-name">SAE S2.01 — Déploiement Java</div>
+          <div class="proj-top">
+            <div class="proj-icon-wrap purple">☕</div>
+            <span class="proj-sem">S2</span>
+          </div>
+          <div class="proj-name">SAE 2.01 · Application Java + IHM</div>
           <p class="proj-desc">
-            Déploiement d'une application Java avec IHM. Intégration de notions de mathématiques et de GPI.
+            Déploiement d'une application Java avec interface graphique, en intégrant
+            des notions de mathématiques et de gestion de projet informatique.
           </p>
           <div class="proj-techs">
             <span class="tech">Java</span>
@@ -191,10 +221,31 @@
         </div>
 
         <div class="proj-card">
-          <div class="proj-icon-wrap amber">📊</div>
-          <div class="proj-name">SAE S2.04 — Gestion de BDD</div>
+          <div class="proj-top">
+            <div class="proj-icon-wrap blue">🌐</div>
+            <span class="proj-sem">S2</span>
+          </div>
+          <div class="proj-name">SAE 2.03 · Services réseau</div>
           <p class="proj-desc">
-            Gestion avancée d'une base de données et création d'un rapport analytique détaillé.
+            Configuration de services réseau sous Linux : mise en place d'un
+            serveur Apache2 et hébergement d'un site web.
+          </p>
+          <div class="proj-techs">
+            <span class="tech">Apache2</span>
+            <span class="tech">Réseaux</span>
+            <span class="tech">Linux</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <div class="proj-icon-wrap pink">📊</div>
+            <span class="proj-sem">S2</span>
+          </div>
+          <div class="proj-name">SAE 2.04 · Exploitation de données</div>
+          <p class="proj-desc">
+            Exploitation avancée d'une base de données et production d'un rapport
+            analytique avec restitution visuelle sous Power BI.
           </p>
           <div class="proj-techs">
             <span class="tech">Power BI</span>
@@ -203,24 +254,153 @@
           </div>
         </div>
 
-        <div class="proj-card">
-          <div class="proj-icon-wrap blue">🌐</div>
-          <div class="proj-name">SAE S2.03 — Services réseau</div>
-          <p class="proj-desc">
-            Configuration de services réseaux, mise en place d'un serveur Apache2 et hébergement d'un site internet.
-          </p>
-          <div class="proj-techs">
-            <span class="tech">Apache2</span>
-            <span class="tech">Réseaux</span>
-            <span class="tech">Linux</span>
+      </div>
+
+      <p class="projects-note">→ Les projets du parcours DACS et de la CARSAT arriveront ici dès la rentrée.</p>
+    </article>
+
+    <!-- ── 6 · STACK ────────────────────────────── -->
+    <article class="card card-stack" aria-label="Stack technique">
+      <p class="card-label">stack technique</p>
+
+      <div class="stack-group">
+        <h3 class="stack-group-title green">développement</h3>
+        <div class="stack-rows">
+          <div class="stack-row"><span class="stack-name">Java</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <div class="stack-row"><span class="stack-name">Python</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <div class="stack-row"><span class="stack-name">C</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <div class="stack-row"><span class="stack-name">HTML / CSS</span><span class="lvl" aria-label="à l'aise"><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+          <div class="stack-row"><span class="stack-name">JavaScript</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3 class="stack-group-title cyan">systèmes &amp; réseaux</h3>
+        <div class="stack-rows">
+          <div class="stack-row"><span class="stack-name">Linux</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <div class="stack-row"><span class="stack-name">Bash</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <div class="stack-row"><span class="stack-name">Apache2</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <div class="stack-row"><span class="stack-name">Réseaux · TCP/IP</span><span class="lvl" aria-label="découvert"><i class="on"></i><i></i><i></i></span></div>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3 class="stack-group-title amber">données</h3>
+        <div class="stack-rows">
+          <div class="stack-row"><span class="stack-name">SQL · PostgreSQL</span><span class="lvl" aria-label="à l'aise"><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+          <div class="stack-row"><span class="stack-name">Modélisation MCD/MLD</span><span class="lvl" aria-label="à l'aise"><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+          <div class="stack-row"><span class="stack-name">Power BI</span><span class="lvl" aria-label="découvert"><i class="on"></i><i></i><i></i></span></div>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3 class="stack-group-title purple">outils &amp; méthodes</h3>
+        <div class="stack-rows">
+          <div class="stack-row"><span class="stack-name">Git</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <div class="stack-row"><span class="stack-name">IntelliJ · VS Code</span><span class="lvl" aria-label="à l'aise"><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+          <div class="stack-row"><span class="stack-name">Gestion de projet</span><span class="lvl" aria-label="pratiqué"><i class="on"></i><i class="on"></i><i></i></span></div>
+        </div>
+      </div>
+
+      <p class="stack-legend">échelle maison : ●○○ découvert · ●●○ pratiqué · ●●● à l'aise — zéro pourcentage inventé.</p>
+    </article>
+
+    <!-- ── 7 · PARCOURS ─────────────────────────── -->
+    <article class="card card-timeline" aria-label="Parcours académique">
+      <p class="card-label">parcours</p>
+
+      <div class="timeline" role="list">
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot filled" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2021 – 2024</div>
+            <div class="tl-title">Lycée Val de Saône</div>
+            <div class="tl-desc">Baccalauréat STI2D, spécialité SIN — mes premiers pas dans les systèmes d'information et le numérique.</div>
           </div>
         </div>
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot filled" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2025 – 2026</div>
+            <div class="tl-title">BUT Informatique — 1ʳᵉ année</div>
+            <div class="tl-desc">IUT Lyon 1 · La Doua — développement, réseaux, bases de données, mathématiques.</div>
+            <span class="tl-badge green">✓ Validée — juillet 2026</span>
+          </div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot current" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2026 – 2027</div>
+            <div class="tl-title">BUT 2 — Parcours DACS</div>
+            <div class="tl-desc">Déploiement d'Applications Communicantes et Sécurisées · en alternance à la CARSAT Rhône-Alpes.</div>
+            <span class="tl-badge cyan">→ Rentrée septembre 2026</span>
+          </div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+          <div class="tl-left">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2027 – 2028</div>
+            <div class="tl-title">BUT 3 — Parcours DACS</div>
+            <div class="tl-desc">Diplôme national Bac+3, toujours en alternance à la CARSAT.</div>
+          </div>
+        </div>
+
       </div>
     </article>
 
+    <!-- ── 8 · EN CE MOMENT ─────────────────────── -->
+    <article class="card card-now" aria-label="En ce moment">
+      <p class="card-label">en ce moment — été 2026</p>
+
+      <div class="now-list">
+
+        <div class="now-item">
+          <div class="now-icon amber" aria-hidden="true">📚</div>
+          <div class="now-info">
+            <div class="now-title">Révisions ciblées</div>
+            <div class="now-sub">POO Java &amp; fondamentaux réseau, pour attaquer le parcours DACS du bon pied.</div>
+          </div>
+        </div>
+
+        <div class="now-item">
+          <div class="now-icon green" aria-hidden="true">🐧</div>
+          <div class="now-info">
+            <div class="now-title">Bidouille Linux</div>
+            <div class="now-sub">Peaufinage de ma config, scripts Bash du quotidien et exploration de l'écosystème open-source.</div>
+          </div>
+        </div>
+
+        <div class="now-item">
+          <div class="now-icon cyan" aria-hidden="true">🧳</div>
+          <div class="now-info">
+            <div class="now-title">Cap sur la CARSAT</div>
+            <div class="now-sub">Découverte du secteur de la protection sociale avant l'arrivée en septembre.</div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ── 9 · CONTACT ──────────────────────────── -->
     <article class="card card-contact" aria-label="Contact">
       <div>
-        <p class="card-label">Me contacter</p>
+        <p class="card-label">contact</p>
         <h2 class="contact-heading">Travaillons<br>ensemble ✦</h2>
       </div>
 
@@ -231,7 +411,7 @@
           <div class="link-icon-wrap li" aria-hidden="true">💼</div>
           <div class="link-info">
             <div class="link-name">LinkedIn</div>
-            <div class="link-sub">Mon profil</div>
+            <div class="link-sub">baptiste-pillard</div>
           </div>
           <span class="link-caret" aria-hidden="true">›</span>
         </a>
@@ -245,6 +425,15 @@
           <span class="link-caret" aria-hidden="true">›</span>
         </a>
 
+        <a class="contact-link" href="CV_BAPTISTE.pdf" download aria-label="Télécharger mon CV">
+          <div class="link-icon-wrap cv" aria-hidden="true">📄</div>
+          <div class="link-info">
+            <div class="link-name">CV</div>
+            <div class="link-sub">PDF · à jour 2026</div>
+          </div>
+          <span class="link-caret" aria-hidden="true">⬇</span>
+        </a>
+
       </nav>
 
       <button class="copy-btn" id="copyBtn" aria-label="Copier l'adresse email">
@@ -252,109 +441,11 @@
       </button>
     </article>
 
-    <article class="card card-timeline" aria-label="Parcours académique">
-      <p class="card-label">Mon parcours</p>
-
-      <div class="timeline" role="list">
-
-        <div class="tl-item" role="listitem">
-          <div class="tl-left">
-            <span class="tl-dot filled" aria-hidden="true"></span>
-            <div class="tl-line"></div>
-          </div>
-          <div class="tl-content">
-            <div class="tl-date">2021 – 2024</div>
-            <div class="tl-title">Lycée</div>
-            <div class="tl-desc">Baccalauréat STI2D spécialité SIN</div>
-            <span class="tl-badge">✏️ Val de Saône </span>
-          </div>
-        </div>
-
-        <div class="tl-item" role="listitem">
-          <div class="tl-left">
-            <span class="tl-dot current" aria-hidden="true"></span>
-            <div class="tl-line"></div>
-          </div>
-          <div class="tl-content">
-            <div class="tl-date">2025 → aujourd'hui</div>
-            <div class="tl-title">BUT Informatique — BUT 1</div>
-            <div class="tl-desc">IUT Lyon 1 · La Doua<br>Développement, réseaux, bases de données, mathématiques</div>
-            <span class="tl-badge green">● En cours</span>
-          </div>
-        </div>
-
-        <div class="tl-item" role="listitem">
-          <div class="tl-left">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <div class="tl-line"></div>
-          </div>
-          <div class="tl-content">
-            <div class="tl-date">2026 – 2027</div>
-            <div class="tl-title">BUT Informatique — BUT 2 DACS</div>
-            <div class="tl-desc">Alternance ou poursuite d'études · Lyon</div>
-          </div>
-        </div>
-
-        <div class="tl-item" role="listitem">
-          <div class="tl-left">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <div class="tl-line"></div>
-          </div>
-          <div class="tl-content">
-            <div class="tl-date">2027 – 2028</div>
-            <div class="tl-title">BUT Informatique — BUT 3 DACS</div>
-            <div class="tl-desc">Diplôme national · parcours à définir</div>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
-    <article class="card card-now" aria-label="En ce moment">
-      <p class="card-label">En ce moment ✦</p>
-
-      <div class="now-list">
-
-        <div class="now-item">
-          <div class="now-icon amber" aria-hidden="true">☕</div>
-          <div class="now-info">
-            <div class="now-title">Java</div>
-            <div class="now-sub">Programmation Orientée Objet</div>
-            <div class="now-progress-wrap">
-              <div class="now-progress fill-amber" data-width="65"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="now-item">
-          <div class="now-icon blue" aria-hidden="true">📈</div>
-          <div class="now-info">
-            <div class="now-title">GPI</div>
-            <div class="now-sub">Gestion de Projet Informatique</div>
-            <div class="now-progress-wrap">
-              <div class="now-progress fill-blue" data-width="60"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="now-item">
-          <div class="now-icon purple" aria-hidden="true">💬</div>
-          <div class="now-info">
-            <div class="now-title">Communication</div>
-            <div class="now-sub">Savoir-être, présentations</div>
-            <div class="now-progress-wrap">
-              <div class="now-progress fill-purple" data-width="55"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
   </main>
 
   <footer>
-    Conçu &amp; développé par Baptiste Pillard · IUT Lyon 1 La Doua · 2025-2026
+    <p>Conçu &amp; codé à la main — HTML, CSS &amp; JS vanilla, zéro framework.</p>
+    <p class="foot-mono">baptiste pillard · iut lyon 1 → carsat rhône-alpes · 2026</p>
   </footer>
 
   <div class="toast" id="toast" role="alert" aria-live="assertive">
